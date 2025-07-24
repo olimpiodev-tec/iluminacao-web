@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iluminação Auto</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Controle de Lâmpadas</h1>
 
     <div class="comodo">
         <h2>Sala</h2>
-        <div class="lampada">💡</div>
-        <button>Ligar / Desligar</button>
+        <div class="lampada" id="lamp-sala">💡</div>
+        <button onclick="ligarLampadaSala()" id="bt-sala">Ligar</button>
     </div>
-    teste
+ 
 
     <div class="comodo">
         <h2>Cozinha</h2>
-        <div class="lampada">💡</div>
-        <button>Ligar / Desligar</button>
+        <div class="lampada" id="lamp-cozinha">💡</div>
+        <button onclick="ligarLampadaCozinha()" id="bt-cozinha">Ligar</button>
     </div>
 </body>
+<script src="mqttws31.js"></script>
+<script src="script.js"></script>
 </html>
